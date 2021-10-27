@@ -24,7 +24,7 @@
     assist whenever it requested
         
     
- ### GitHub Deliverables. 
+ ### GitHub Deliverables 
      
     Repository lead: Sergio
  
