@@ -2,13 +2,30 @@
 
 ## Segment 1
 
-  ### General Deliverables
+### General Deliverables
 
-    [X] Topic - Kaggle challenge to predict the final price of each home in Ames, Iowa
+#### Topic - Predict the final price of each home in Ames, Iowa
 
-    [X] Reason for selected topic - The topic was chosen by consensus. Most of team had interest on FinTech related topics, and this project appealed to all. It also has a very         practical application.   
+The topic was chosen by consensus. Most of team had interest on FinTech related topics, and this project appealed to all. It also has a very practical application.
 
-    [ ] [Description of source data]()
+#### Data Source
+
+The data was obtained from a active Kaggle challenge to predict the final price of homes in the city of Ames, Iowa, and consists of:
+
+   [Test data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/test.csv)
+
+   [Train data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train.csv)
+
+Description:
+
+   [Qualitative Data](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/kaggle_data_description.txt)
+
+   [Test data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
+
+   [Train data set]()
+
+ 
+   
     
     [X] Proposed questions to answer 
     
