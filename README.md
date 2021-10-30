@@ -20,9 +20,9 @@ Description
 
    - [Qualitative summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/kaggle_data_description.txt)
 
-   - [Test data metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
+   - [Test metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
 
-   - [Train data metadata summary]()
+   - [Train metadata summary]()
 
  
    
