@@ -12,17 +12,17 @@ The topic was chosen by consensus. Most of team had interest on FinTech related 
 
 The data was obtained from a active Kaggle challenge to predict the final price of homes in the city of Ames, Iowa, and consists of:
 
-   [Test data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/test.csv)
+   - [Test data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/test.csv)
 
-   [Train data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train.csv)
+   - [Train data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train.csv)
 
-Description:
+Description
 
-   [Qualitative Data](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/kaggle_data_description.txt)
+   - [Qualitative summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/kaggle_data_description.txt)
 
-   [Test data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
+   - [Test data metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
 
-   [Train data set]()
+   - [Train data metadata summary]()
 
  
    
