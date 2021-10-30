@@ -1,16 +1,27 @@
-# Final Project
+# Predict the Final Home Price
 
 ## Segment 1
 
   ### General Deliverables
 
-    [ ] Topic - 
+    [X] Topic - Kaggle challenge to predict the final price of each home in Ames, Iowa
 
-    [ ] Reason for selected topic -
+    [X] Reason for selected topic - The topic was chosen by consensus. Most of team had interest on FinTech related topics, and this project appealed to all. It also has a very         practical application.   
 
-    [ ] Description of source data -
+    [ ] [Description of source data]()
+    
+    [ ] Proposed questions to answer 
+    
+        1)	What is the predicted final price of each home on the test sample?
 
-    [ ] Questions we seek to answer -
+        2)	What can the prediction results be compared against?
+
+        3)	What is the level of accuracy?
+
+        4)	What factors affect the model accuracy?
+
+        5)	What Home features affect the home prices the most in the prediction model?
+
 
   ### Communication protocols
   
