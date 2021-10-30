@@ -10,7 +10,7 @@
 
     [ ] [Description of source data]()
     
-    [ ] Proposed questions to answer 
+    [X] Proposed questions to answer 
     
         1)	What is the predicted final price of each home on the test sample?
 
