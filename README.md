@@ -6,7 +6,7 @@
 
 #### Topic - Predict the final price of each home in Ames, Iowa
 
-The topic was chosen by consensus. Most of team had interest on FinTech related topics, and this project appealed to all. It also has a very practical application.
+The topic was chosen by consensus. Most of the team members had interest on FinTech related topics, and this project appealed to all. It also has a very practical application.
 
 #### Data Source
 
