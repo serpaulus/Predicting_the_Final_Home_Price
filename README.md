@@ -22,22 +22,20 @@ Description
 
    - [Test metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
 
-   - [Train metadata summary]()
+   - [Train metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train_desc.csv)
 
  
-   
+ ### Proposed questions to answer 
     
-    Proposed questions to answer 
-    
-        1)	What is the predicted final price of each home on the test sample?
+   1)	What is the predicted final price of each home on the test sample?
 
-        2)	What can the prediction results be compared against?
+   2)	What can the prediction results be compared against?
 
-        3)	What is the level of accuracy?
+   3)	What is the level of accuracy?
 
-        4)	What factors affect the model accuracy?
+   4)	What factors affect the model accuracy?
 
-        5)	What Home features affect the home prices the most in the prediction model?
+   5)	What Home features affect the home prices the most in the prediction model?
 
 
   ### Communication protocols
@@ -60,18 +58,18 @@ Description
     
     [X] Each team member has at least four commits from the duration of the first segment
     
-    Pts: 10
-    
+
  ### Machine Learning Model Deliverables
  
 
     Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
  
-    [ ] Takes in data in from the provisional database
+    [X] Takes in data in from the provisional database
+    ![]()
     
     [ ] Outputs label(s) for input data
+    ![]()
     
-    Pts: 35
 
 ### Database Deliverables
 
