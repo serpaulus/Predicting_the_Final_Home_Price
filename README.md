@@ -40,31 +40,31 @@ Description
 
   ### Communication protocols
   
-    The team will communicate via mainly via Slack and Zoom when required. 
-    
-    As much as possible branch merges will be coordinated with team members
-    
-    Updates via Slack and request collaboration in a timely manner to minimise delays 
-    
-    Leads will be the primary developers in their deliverables, and will submit their deliverable branch; howerver, all team members will try to 
-    assist whenever it requested
+ The team will communicate via mainly via Slack and Zoom when required. 
+
+ As much as possible branch merges will be coordinated with team members
+
+ Updates via Slack and request collaboration in a timely manner to minimise delays 
+
+ Leads will be the primary developers in their deliverables, and will submit their deliverable branch; howerver, all team members will try to 
+ assist whenever it requested
         
     
  ### GitHub Deliverables 
      
-    [X] Main Branch includes a README.md
-    
-    [X] At least one branch for each team member
-    
-    [X] Each team member has at least four commits from the duration of the first segment
-    
+ [X] Main Branch includes a README.md
+
+ [X] At least one branch for each team member
+
+ [X] Each team member has at least four commits from the duration of the first segment
+
 
  ### Machine Learning Model Deliverables
  
 
     Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
  
-    [X] Takes in data in from the provisional database
+    [] Takes in data in from the provisional database
     ![]()
     
     [ ] Outputs label(s) for input data
@@ -77,6 +77,7 @@ Description
     Team members present a provisional database that stands in for the final database and accomplishes the following: 
  
     [x] Sample data that mimics the expected final database structure or schema
+    ![]()
 
     [ ] Draft machine learning module is connected to the provisional database 
     
