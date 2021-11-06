@@ -27,7 +27,7 @@ Description
  
    
     
-    [X] Proposed questions to answer 
+    Proposed questions to answer 
     
         1)	What is the predicted final price of each home on the test sample?
 
@@ -54,20 +54,17 @@ Description
     
  ### GitHub Deliverables 
      
-    Repository lead: Sergio
- 
     [X] Main Branch includes a README.md
     
-    [ ] At least one branch for each team member
+    [X] At least one branch for each team member
     
-    [ ] Each team member has at least four commits from the duration of the first segment
+    [X] Each team member has at least four commits from the duration of the first segment
     
     Pts: 10
     
  ### Machine Learning Model Deliverables
  
-    Lead: Keyton
-    
+
     Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
  
     [ ] Takes in data in from the provisional database
@@ -78,18 +75,25 @@ Description
 
 ### Database Deliverables
 
-    Lead: Adebola
 
     Team members present a provisional database that stands in for the final database and accomplishes the following: 
  
-    [ ] Sample data that mimics the expected final database structure or schema
+    [x] Sample data that mimics the expected final database structure or schema
 
     [ ] Draft machine learning module is connected to the provisional database 
     
 
-### Tech Coordinator 
+### Technologies
 
-    TBD
+Jupyter Notebook
+
+Python
+
+PostgreSQL
+
+
+
+
     
     
  
