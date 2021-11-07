@@ -62,25 +62,23 @@ Description
  ### Machine Learning Model Deliverables
  
 
-    Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
+Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
  
-    [] Takes in data in from the provisional database
-    ![]()
-    
-    [ ] Outputs label(s) for input data
-    ![]()
-    
-
+[x] Takes in data in from the provisional database
+![a](https://github.com/serpaulus/Final_Project/blob/main/Resources/ML_deliv1.PNG)
+  
+ 
 ### Database Deliverables
 
 
-    Team members present a provisional database that stands in for the final database and accomplishes the following: 
+Team members present a provisional database that stands in for the final database and accomplishes the following: 
  
-    [x] Sample data that mimics the expected final database structure or schema
-    ![]()
+[x] Sample data that mimics the expected final database structure or schema
+![s](https://github.com/serpaulus/Final_Project/blob/main/Resources/tables_in_pgsql.PNG)
 
-    [ ] Draft machine learning module is connected to the provisional database 
-    
+[x] Draft machine learning module is connected to the provisional database
+![a](https://github.com/serpaulus/Final_Project/blob/main/Resources/ML_deliv2a.PNG) 
+![b](https://github.com/serpaulus/Final_Project/blob/main/Resources/train_lrm_results_in_db.PNG)     
 
 ### Technologies
 
