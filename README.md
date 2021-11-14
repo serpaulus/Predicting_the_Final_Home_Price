@@ -1,7 +1,5 @@
 # Predict the Final Home Price
 
-## Segment 1
-
 ### General Deliverables
 
 #### Topic - Predict the final price of each home in Ames, Iowa
