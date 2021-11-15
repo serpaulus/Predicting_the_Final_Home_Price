@@ -1,13 +1,14 @@
-![Final_project_presentation](https://user-images.githubusercontent.com/85421407/141723813-f8d0c01d-f211-4e4d-8bda-3f5f90159582.jpg)
+![Final_project_presentation](https://user-images.githubusercontent.com/85421407/141724108-a8b95d7a-651b-4b42-b0e9-eeda484726b2.jpg)
 
 
-### General Deliverables
+## Summary
 
-#### Topic - Predict the final price of each home in Ames, Iowa
+Today it is hard to think of an industry in which Data Analytics does not play a major role.  The housing market, one the bedrocks of the economy, is not the exception. From analyzing national or regional market trends to be able to assess the value of home before it enters the market data analytics helps provide key insights that drive some of the most important market decisions and strategies. This team project aims to apply machine learning methodologies to analyze various common features to predict the final selling price.     
 
-The topic was chosen by consensus. Most of the team members had interest on FinTech related topics, and this project appealed to all. It also has a very practical application.
 
-#### Data Source
+## Methodology
+
+### The Data
 
 The data was obtained from a active Kaggle challenge to predict the final price of homes in the city of Ames, Iowa, and consists of:
 
@@ -22,8 +23,10 @@ Description
    - [Test metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
 
    - [Train metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train_desc.csv)
+   
 
-#### Project Presentation: https://docs.google.com/presentation/d/1z0xOtSOFEzmkXZrz9OE3YVoVVCDtRbS0/edit#slide=id.p5
+#### [Project highlights](https://docs.google.com/presentation/d/1z0xOtSOFEzmkXZrz9OE3YVoVVCDtRbS0/edit#slide=id.p5)
+   
 
  
  ### Proposed questions to answer 
