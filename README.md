@@ -22,6 +22,8 @@ Description
 
    - [Train metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train_desc.csv)
 
+#### Project Presentation: https://docs.google.com/presentation/d/1z0xOtSOFEzmkXZrz9OE3YVoVVCDtRbS0/edit#slide=id.p5
+
  
  ### Proposed questions to answer 
     
