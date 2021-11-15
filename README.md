@@ -1,4 +1,4 @@
-# Predict the Final Home Price
+# Predicting the Final Home Price
 
 ### General Deliverables
 
