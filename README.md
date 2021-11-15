@@ -1,4 +1,5 @@
-# Predicting the Final Home Price
+![Final_project_presentation](https://user-images.githubusercontent.com/85421407/141723813-f8d0c01d-f211-4e4d-8bda-3f5f90159582.jpg)
+
 
 ### General Deliverables
 
