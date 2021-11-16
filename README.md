@@ -11,7 +11,7 @@ It is hard to think of any industry in which Data Analytics does not play a majo
 
 ### The Data
 
-The data was obtained from a active Kaggle challenge to predict the final price of homes in the city of Ames, Iowa, and consists of:
+Project data was obtained from a active Kaggle challenge to predict the final price of homes in the city of Ames, Iowa, and consists of:
 
    - [Test data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/test.csv)
 
@@ -25,8 +25,9 @@ Description
 
    - [Train metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train_desc.csv)
    
+      
 
-#### [Project highlights](https://docs.google.com/presentation/d/1z0xOtSOFEzmkXZrz9OE3YVoVVCDtRbS0/edit#slide=id.p5)
+### [Project Presentation Slides](https://docs.google.com/presentation/d/1z0xOtSOFEzmkXZrz9OE3YVoVVCDtRbS0/edit#slide=id.p1)
    
 
  
