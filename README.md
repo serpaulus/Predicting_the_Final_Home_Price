@@ -1,4 +1,5 @@
-![Final_project_presentation](https://user-images.githubusercontent.com/85421407/141724108-a8b95d7a-651b-4b42-b0e9-eeda484726b2.jpg)
+![Final_project_presentation](https://user-images.githubusercontent.com/85421407/141881008-6c9abc09-3ae2-4a0a-865d-a6ee5f2290ec.jpg)
+
 
 
 ## Summary
