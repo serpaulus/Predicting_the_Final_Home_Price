@@ -9,7 +9,7 @@ It is hard to think of any industry in which Data Analytics does not play a majo
 
 ## Methodology
 
-### The Data
+### Data Source
 
 Project data was obtained from a active Kaggle challenge to predict the final price of homes in the city of Ames, Iowa, and consists of:
 
