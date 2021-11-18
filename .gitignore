@@ -1,6 +1,21 @@
-# Adding config.py file & .ipynb_checkpoints
+# Adding config.py file, .ipynb_checkpoints, 
 config.py
 .ipynb_checkpoints
 
 
+# Prepare to hide or delete example resourse files, machine learning options, ml_model_connection_test
+
+# ml_model_connection_test.ipynb
+# Machine_Learning_Options.ipynb
+# cc_default_combination_sampling.csv
+# cc_default_undersmapling.csv
+# diabetes.csv
+# loans_data_categorical_lable_and_encode.csv
+# loans_data_encoded_categorical_lable_and_encode.csv
+# loans_data_encoded_decision_trees.csv
+# loans_data_encoded_gradient_boosted_tree.csv
+# loans_data_encoded_random_forest_model.csv
+# loans_data_encoded_scale.csv
+# loans_svm.csv
+# Salary_Data.csv
 
