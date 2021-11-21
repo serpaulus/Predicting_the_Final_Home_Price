@@ -2,8 +2,8 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 10,
-   "id": "58f90066",
+   "execution_count": 38,
+   "id": "5c36b203",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -97,15 +97,15 @@
   },
   {
    "cell_type": "markdown",
-   "id": "ef1f024f",
+   "id": "bc213cd7",
    "metadata": {},
    "source": [
-    "# Actual Machine Learning Model"
+    "# Machine Learning Model"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "9531d35b",
+   "id": "9a4d04c2",
    "metadata": {},
    "source": [
     "### 1. Create a model - Linear Regression"
@@ -113,7 +113,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "286b145c",
+   "id": "a291c49c",
    "metadata": {},
    "source": [
     "#### Import data"
@@ -121,27 +121,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
-   "id": "fd62574e",
+   "execution_count": 39,
+   "id": "c1fe91ff",
    "metadata": {},
    "outputs": [],
    "source": [
     "# Import data from PostgresSQL using SQLalchemy\n",
     "#Connect to PostgresSQL\n",
-    "# SQL Tables:\n",
-    "# clean_test\n",
-    "# clean_test_df\n",
-    "# clean_train\n",
-    "# clean_train_df\n",
-    "# features\n",
     "db_string = f\"postgresql://postgres:{db_password}@housing-prices.ctpruadwlamv.us-east-2.rds.amazonaws.com:5432/housing-prices\"\n",
     "engine = create_engine(db_string)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
-   "id": "250e92bb",
+   "execution_count": 40,
+   "id": "faac7868",
    "metadata": {},
    "outputs": [
     {
@@ -475,7 +469,7 @@
        "10         Normal      118000            1  "
       ]
      },
-     "execution_count": 12,
+     "execution_count": 40,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -488,8 +482,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
-   "id": "bc68e2ea",
+   "execution_count": 41,
+   "id": "f0c10db6",
    "metadata": {},
    "outputs": [
     {
@@ -799,7 +793,7 @@
        "10         Normal      118000  "
       ]
      },
-     "execution_count": 13,
+     "execution_count": 41,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -836,8 +830,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
-   "id": "2373d674",
+   "execution_count": 42,
+   "id": "addd2c56",
    "metadata": {},
    "outputs": [
     {
@@ -862,7 +856,7 @@
        "dtype: object"
       ]
      },
-     "execution_count": 14,
+     "execution_count": 42,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -873,8 +867,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
-   "id": "7863933a",
+   "execution_count": 43,
+   "id": "4ef353db",
    "metadata": {},
    "outputs": [
     {
@@ -899,7 +893,7 @@
        "dtype: int64"
       ]
      },
-     "execution_count": 15,
+     "execution_count": 43,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -910,8 +904,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
-   "id": "3c77bc77",
+   "execution_count": 44,
+   "id": "47430e9a",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -939,7 +933,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "2d9fe5a4",
+   "id": "85f8100a",
    "metadata": {},
    "source": [
     "#### Transform Data -  Encoding"
@@ -947,8 +941,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 17,
-   "id": "f2524b47",
+   "execution_count": 45,
+   "id": "0498ca47",
    "metadata": {},
    "outputs": [
     {
@@ -1334,7 +1328,7 @@
        "[10 rows x 24 columns]"
       ]
      },
-     "execution_count": 17,
+     "execution_count": 45,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1358,8 +1352,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 18,
-   "id": "6c977d30",
+   "execution_count": 46,
+   "id": "97557bda",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1368,8 +1362,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 19,
-   "id": "522a70c2",
+   "execution_count": 47,
+   "id": "828b5d51",
    "metadata": {},
    "outputs": [
     {
@@ -1679,7 +1673,7 @@
        "10                3         Normal                  4  "
       ]
      },
-     "execution_count": 19,
+     "execution_count": 47,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1699,8 +1693,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
-   "id": "cfafe114",
+   "execution_count": 48,
+   "id": "1db16384",
    "metadata": {},
    "outputs": [
     {
@@ -2010,7 +2004,7 @@
        "10                      3                3                  4  "
       ]
      },
-     "execution_count": 20,
+     "execution_count": 48,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2027,13 +2021,13 @@
     "          'Neighborhood',\n",
     "          'Sale_Condition'],\n",
     "         axis=1)\n",
-    "df2.head(10)\n"
+    "df2.head(10)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
-   "id": "d5df2206",
+   "execution_count": 49,
+   "id": "9b688e14",
    "metadata": {},
    "outputs": [
     {
@@ -2096,254 +2090,254 @@
        "  </thead>\n",
        "  <tbody>\n",
        "    <tr>\n",
-       "      <th>1</th>\n",
+       "      <th>1451</th>\n",
        "      <td>5</td>\n",
-       "      <td>3</td>\n",
-       "      <td>2.5</td>\n",
-       "      <td>2</td>\n",
-       "      <td>1710</td>\n",
        "      <td>4</td>\n",
-       "      <td>2003</td>\n",
-       "      <td>2003</td>\n",
+       "      <td>3.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>1792</td>\n",
+       "      <td>2</td>\n",
+       "      <td>1974</td>\n",
+       "      <td>1974</td>\n",
        "      <td>12</td>\n",
        "      <td>13</td>\n",
-       "      <td>2</td>\n",
+       "      <td>3</td>\n",
+       "      <td>12</td>\n",
        "      <td>5</td>\n",
-       "      <td>7</td>\n",
        "      <td>5</td>\n",
        "      <td>4</td>\n",
-       "      <td>208500</td>\n",
+       "      <td>136000</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>2</th>\n",
+       "      <th>1452</th>\n",
        "      <td>2</td>\n",
        "      <td>3</td>\n",
        "      <td>2.0</td>\n",
        "      <td>2</td>\n",
-       "      <td>1262</td>\n",
-       "      <td>2</td>\n",
-       "      <td>1976</td>\n",
-       "      <td>1976</td>\n",
-       "      <td>8</td>\n",
-       "      <td>8</td>\n",
-       "      <td>3</td>\n",
-       "      <td>24</td>\n",
-       "      <td>6</td>\n",
-       "      <td>8</td>\n",
+       "      <td>1578</td>\n",
        "      <td>4</td>\n",
-       "      <td>181500</td>\n",
+       "      <td>2008</td>\n",
+       "      <td>2009</td>\n",
+       "      <td>5</td>\n",
+       "      <td>5</td>\n",
+       "      <td>4</td>\n",
+       "      <td>21</td>\n",
+       "      <td>8</td>\n",
+       "      <td>5</td>\n",
+       "      <td>5</td>\n",
+       "      <td>287090</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>5</td>\n",
-       "      <td>3</td>\n",
-       "      <td>2.5</td>\n",
+       "      <th>1453</th>\n",
+       "      <td>7</td>\n",
        "      <td>2</td>\n",
-       "      <td>1786</td>\n",
+       "      <td>1.0</td>\n",
+       "      <td>3</td>\n",
+       "      <td>1072</td>\n",
        "      <td>4</td>\n",
-       "      <td>2001</td>\n",
-       "      <td>2002</td>\n",
+       "      <td>2005</td>\n",
+       "      <td>2005</td>\n",
        "      <td>12</td>\n",
        "      <td>13</td>\n",
        "      <td>2</td>\n",
-       "      <td>5</td>\n",
        "      <td>7</td>\n",
        "      <td>5</td>\n",
+       "      <td>5</td>\n",
        "      <td>4</td>\n",
-       "      <td>223500</td>\n",
+       "      <td>145000</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>5</td>\n",
+       "      <th>1454</th>\n",
+       "      <td>2</td>\n",
        "      <td>3</td>\n",
        "      <td>1.0</td>\n",
-       "      <td>6</td>\n",
-       "      <td>1717</td>\n",
        "      <td>0</td>\n",
-       "      <td>1915</td>\n",
-       "      <td>1970</td>\n",
-       "      <td>13</td>\n",
-       "      <td>15</td>\n",
-       "      <td>3</td>\n",
-       "      <td>6</td>\n",
-       "      <td>7</td>\n",
-       "      <td>5</td>\n",
-       "      <td>0</td>\n",
-       "      <td>140000</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>5</th>\n",
-       "      <td>5</td>\n",
+       "      <td>1140</td>\n",
        "      <td>4</td>\n",
-       "      <td>2.5</td>\n",
-       "      <td>2</td>\n",
-       "      <td>2198</td>\n",
-       "      <td>2</td>\n",
-       "      <td>2000</td>\n",
-       "      <td>2000</td>\n",
-       "      <td>12</td>\n",
-       "      <td>13</td>\n",
-       "      <td>2</td>\n",
-       "      <td>15</td>\n",
-       "      <td>8</td>\n",
-       "      <td>5</td>\n",
-       "      <td>4</td>\n",
-       "      <td>250000</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>6</th>\n",
-       "      <td>0</td>\n",
-       "      <td>1</td>\n",
-       "      <td>1.5</td>\n",
-       "      <td>2</td>\n",
-       "      <td>1362</td>\n",
-       "      <td>4</td>\n",
-       "      <td>1993</td>\n",
-       "      <td>1995</td>\n",
+       "      <td>2006</td>\n",
+       "      <td>2006</td>\n",
        "      <td>12</td>\n",
        "      <td>13</td>\n",
        "      <td>3</td>\n",
        "      <td>11</td>\n",
        "      <td>5</td>\n",
        "      <td>5</td>\n",
-       "      <td>4</td>\n",
-       "      <td>143000</td>\n",
+       "      <td>0</td>\n",
+       "      <td>84500</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>7</th>\n",
+       "      <th>1455</th>\n",
        "      <td>2</td>\n",
-       "      <td>3</td>\n",
+       "      <td>2</td>\n",
        "      <td>2.0</td>\n",
        "      <td>2</td>\n",
-       "      <td>1694</td>\n",
+       "      <td>1221</td>\n",
        "      <td>4</td>\n",
        "      <td>2004</td>\n",
        "      <td>2005</td>\n",
        "      <td>12</td>\n",
        "      <td>13</td>\n",
-       "      <td>4</td>\n",
+       "      <td>3</td>\n",
        "      <td>21</td>\n",
-       "      <td>8</td>\n",
+       "      <td>7</td>\n",
        "      <td>5</td>\n",
        "      <td>4</td>\n",
-       "      <td>307000</td>\n",
+       "      <td>185000</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>8</th>\n",
+       "      <th>1456</th>\n",
        "      <td>5</td>\n",
        "      <td>3</td>\n",
        "      <td>2.5</td>\n",
        "      <td>2</td>\n",
-       "      <td>2090</td>\n",
-       "      <td>0</td>\n",
-       "      <td>1973</td>\n",
-       "      <td>1973</td>\n",
+       "      <td>1647</td>\n",
+       "      <td>4</td>\n",
+       "      <td>1999</td>\n",
+       "      <td>2000</td>\n",
+       "      <td>12</td>\n",
+       "      <td>13</td>\n",
+       "      <td>3</td>\n",
+       "      <td>8</td>\n",
        "      <td>6</td>\n",
-       "      <td>6</td>\n",
+       "      <td>5</td>\n",
+       "      <td>4</td>\n",
+       "      <td>175000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1457</th>\n",
+       "      <td>2</td>\n",
+       "      <td>3</td>\n",
+       "      <td>2.0</td>\n",
+       "      <td>2</td>\n",
+       "      <td>2073</td>\n",
+       "      <td>4</td>\n",
+       "      <td>1978</td>\n",
+       "      <td>1988</td>\n",
+       "      <td>9</td>\n",
+       "      <td>10</td>\n",
        "      <td>4</td>\n",
        "      <td>14</td>\n",
-       "      <td>7</td>\n",
+       "      <td>6</td>\n",
        "      <td>6</td>\n",
        "      <td>4</td>\n",
-       "      <td>200000</td>\n",
+       "      <td>210000</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>9</th>\n",
-       "      <td>0</td>\n",
-       "      <td>2</td>\n",
-       "      <td>2.0</td>\n",
-       "      <td>6</td>\n",
-       "      <td>1774</td>\n",
-       "      <td>4</td>\n",
-       "      <td>1931</td>\n",
-       "      <td>1950</td>\n",
-       "      <td>3</td>\n",
-       "      <td>15</td>\n",
-       "      <td>3</td>\n",
-       "      <td>17</td>\n",
-       "      <td>7</td>\n",
+       "      <th>1458</th>\n",
        "      <td>5</td>\n",
-       "      <td>0</td>\n",
-       "      <td>129900</td>\n",
+       "      <td>4</td>\n",
+       "      <td>2.0</td>\n",
+       "      <td>2</td>\n",
+       "      <td>2340</td>\n",
+       "      <td>4</td>\n",
+       "      <td>1941</td>\n",
+       "      <td>2006</td>\n",
+       "      <td>5</td>\n",
+       "      <td>5</td>\n",
+       "      <td>3</td>\n",
+       "      <td>6</td>\n",
+       "      <td>7</td>\n",
+       "      <td>9</td>\n",
+       "      <td>4</td>\n",
+       "      <td>266500</td>\n",
        "    </tr>\n",
        "    <tr>\n",
-       "      <th>10</th>\n",
-       "      <td>1</td>\n",
+       "      <th>1459</th>\n",
+       "      <td>2</td>\n",
        "      <td>2</td>\n",
        "      <td>1.0</td>\n",
        "      <td>2</td>\n",
-       "      <td>1077</td>\n",
-       "      <td>0</td>\n",
-       "      <td>1939</td>\n",
+       "      <td>1078</td>\n",
+       "      <td>4</td>\n",
        "      <td>1950</td>\n",
+       "      <td>1996</td>\n",
        "      <td>8</td>\n",
        "      <td>8</td>\n",
        "      <td>3</td>\n",
-       "      <td>3</td>\n",
+       "      <td>12</td>\n",
        "      <td>5</td>\n",
        "      <td>6</td>\n",
        "      <td>4</td>\n",
-       "      <td>118000</td>\n",
+       "      <td>142125</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1460</th>\n",
+       "      <td>2</td>\n",
+       "      <td>3</td>\n",
+       "      <td>1.5</td>\n",
+       "      <td>2</td>\n",
+       "      <td>1256</td>\n",
+       "      <td>4</td>\n",
+       "      <td>1965</td>\n",
+       "      <td>1965</td>\n",
+       "      <td>6</td>\n",
+       "      <td>6</td>\n",
+       "      <td>3</td>\n",
+       "      <td>7</td>\n",
+       "      <td>5</td>\n",
+       "      <td>6</td>\n",
+       "      <td>4</td>\n",
+       "      <td>147500</td>\n",
        "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
        "</div>"
       ],
       "text/plain": [
-       "    HouseStyle_le  No_of_Bedrooms  No_of_Bath  Garage_Type_le  Total_Sqft  \\\n",
-       "Id                                                                          \n",
-       "1               5               3         2.5               2        1710   \n",
-       "2               2               3         2.0               2        1262   \n",
-       "3               5               3         2.5               2        1786   \n",
-       "4               5               3         1.0               6        1717   \n",
-       "5               5               4         2.5               2        2198   \n",
-       "6               0               1         1.5               2        1362   \n",
-       "7               2               3         2.0               2        1694   \n",
-       "8               5               3         2.5               2        2090   \n",
-       "9               0               2         2.0               6        1774   \n",
-       "10              1               2         1.0               2        1077   \n",
+       "      HouseStyle_le  No_of_Bedrooms  No_of_Bath  Garage_Type_le  Total_Sqft  \\\n",
+       "Id                                                                            \n",
+       "1451              5               4         3.0               0        1792   \n",
+       "1452              2               3         2.0               2        1578   \n",
+       "1453              7               2         1.0               3        1072   \n",
+       "1454              2               3         1.0               0        1140   \n",
+       "1455              2               2         2.0               2        1221   \n",
+       "1456              5               3         2.5               2        1647   \n",
+       "1457              2               3         2.0               2        2073   \n",
+       "1458              5               4         2.0               2        2340   \n",
+       "1459              2               2         1.0               2        1078   \n",
+       "1460              2               3         1.5               2        1256   \n",
        "\n",
-       "    Lot_Location_le  YearBuilt  Year_Remodeled  FirstExterior_le  \\\n",
-       "Id                                                                 \n",
-       "1                 4       2003            2003                12   \n",
-       "2                 2       1976            1976                 8   \n",
-       "3                 4       2001            2002                12   \n",
-       "4                 0       1915            1970                13   \n",
-       "5                 2       2000            2000                12   \n",
-       "6                 4       1993            1995                12   \n",
-       "7                 4       2004            2005                12   \n",
-       "8                 0       1973            1973                 6   \n",
-       "9                 4       1931            1950                 3   \n",
-       "10                0       1939            1950                 8   \n",
+       "      Lot_Location_le  YearBuilt  Year_Remodeled  FirstExterior_le  \\\n",
+       "Id                                                                   \n",
+       "1451                2       1974            1974                12   \n",
+       "1452                4       2008            2009                 5   \n",
+       "1453                4       2005            2005                12   \n",
+       "1454                4       2006            2006                12   \n",
+       "1455                4       2004            2005                12   \n",
+       "1456                4       1999            2000                12   \n",
+       "1457                4       1978            1988                 9   \n",
+       "1458                4       1941            2006                 5   \n",
+       "1459                4       1950            1996                 8   \n",
+       "1460                4       1965            1965                 6   \n",
        "\n",
-       "    SecondExterior_le  MasonryVeneer_Type_le  Neighborhood_le  \\\n",
-       "Id                                                              \n",
-       "1                  13                      2                5   \n",
-       "2                   8                      3               24   \n",
-       "3                  13                      2                5   \n",
-       "4                  15                      3                6   \n",
-       "5                  13                      2               15   \n",
-       "6                  13                      3               11   \n",
-       "7                  13                      4               21   \n",
-       "8                   6                      4               14   \n",
-       "9                  15                      3               17   \n",
-       "10                  8                      3                3   \n",
+       "      SecondExterior_le  MasonryVeneer_Type_le  Neighborhood_le  \\\n",
+       "Id                                                                \n",
+       "1451                 13                      3               12   \n",
+       "1452                  5                      4               21   \n",
+       "1453                 13                      2                7   \n",
+       "1454                 13                      3               11   \n",
+       "1455                 13                      3               21   \n",
+       "1456                 13                      3                8   \n",
+       "1457                 10                      4               14   \n",
+       "1458                  5                      3                6   \n",
+       "1459                  8                      3               12   \n",
+       "1460                  6                      3                7   \n",
        "\n",
-       "    Overall_Quality  Overall_Condition  Sale_Condition_le  Sale_Price  \n",
-       "Id                                                                     \n",
-       "1                 7                  5                  4      208500  \n",
-       "2                 6                  8                  4      181500  \n",
-       "3                 7                  5                  4      223500  \n",
-       "4                 7                  5                  0      140000  \n",
-       "5                 8                  5                  4      250000  \n",
-       "6                 5                  5                  4      143000  \n",
-       "7                 8                  5                  4      307000  \n",
-       "8                 7                  6                  4      200000  \n",
-       "9                 7                  5                  0      129900  \n",
-       "10                5                  6                  4      118000  "
+       "      Overall_Quality  Overall_Condition  Sale_Condition_le  Sale_Price  \n",
+       "Id                                                                       \n",
+       "1451                5                  5                  4      136000  \n",
+       "1452                8                  5                  5      287090  \n",
+       "1453                5                  5                  4      145000  \n",
+       "1454                5                  5                  0       84500  \n",
+       "1455                7                  5                  4      185000  \n",
+       "1456                6                  5                  4      175000  \n",
+       "1457                6                  6                  4      210000  \n",
+       "1458                7                  9                  4      266500  \n",
+       "1459                5                  6                  4      142125  \n",
+       "1460                5                  6                  4      147500  "
       ]
      },
-     "execution_count": 21,
+     "execution_count": 49,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2368,13 +2362,13 @@
     "        'Sale_Price'\n",
     "        ]]\n",
     "\n",
-    "encoded_df.head(10)"
+    "encoded_df.tail(10)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 22,
-   "id": "c632bb8a",
+   "execution_count": 50,
+   "id": "c071b499",
    "metadata": {},
    "outputs": [
     {
@@ -2399,7 +2393,7 @@
        "dtype: object"
       ]
      },
-     "execution_count": 22,
+     "execution_count": 50,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2410,7 +2404,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "ba238770",
+   "id": "384971ec",
    "metadata": {},
    "source": [
     "#### Split the data into input (X) and output (y)"
@@ -2418,8 +2412,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 23,
-   "id": "b0402f48",
+   "execution_count": 51,
+   "id": "1823ba41",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2429,8 +2423,27 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
-   "id": "4b08e0a8",
+   "execution_count": 52,
+   "id": "ca698612",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# IS THIS NEEDED?\n",
+    "\n",
+    "# format data to meet the requirements of the Scikit-learn library\n",
+    "# Conventionally, the independent variable is placed on the x-axis, dependend on the y-axis\n",
+    "# first argument of reshape() specifies the number of rows. -1 means number of rows is unspecified\n",
+    "# second argument of reshape() refers to the number of columns. 1 means there is only one column of independnent variables\n",
+    "# The data in the df column must be reshaped into an array with shape (num_samples, num_features)\n",
+    "# https://stackoverflow.com/questions/18691084/what-does-1-mean-in-numpy-reshape\n",
+    "\n",
+    "# X = df.YearsExperience.values.reshape(-1, 1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "e99f485a",
    "metadata": {},
    "outputs": [
     {
@@ -2618,7 +2631,7 @@
        "5                 8                  5                  4  "
       ]
      },
-     "execution_count": 24,
+     "execution_count": 53,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2630,8 +2643,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
-   "id": "b307a762",
+   "execution_count": 54,
+   "id": "b947f885",
    "metadata": {},
    "outputs": [
     {
@@ -2640,7 +2653,7 @@
        "(1460, 15)"
       ]
      },
-     "execution_count": 25,
+     "execution_count": 54,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2652,8 +2665,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 26,
-   "id": "d47c3cb2",
+   "execution_count": 55,
+   "id": "189bc4a5",
    "metadata": {},
    "outputs": [
     {
@@ -2668,7 +2681,7 @@
        "Name: Sale_Price, dtype: int64"
       ]
      },
-     "execution_count": 26,
+     "execution_count": 55,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2679,8 +2692,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
-   "id": "4d741bf0",
+   "execution_count": 56,
+   "id": "a1eb8dd4",
    "metadata": {},
    "outputs": [
     {
@@ -2689,7 +2702,7 @@
        "(1460,)"
       ]
      },
-     "execution_count": 27,
+     "execution_count": 56,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2701,8 +2714,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 28,
-   "id": "b3950faf",
+   "execution_count": 57,
+   "id": "c622ce41",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2712,8 +2725,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 29,
-   "id": "1f118aa4",
+   "execution_count": 58,
+   "id": "cddcaf46",
    "metadata": {},
    "outputs": [
     {
@@ -2736,8 +2749,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
-   "id": "62905edc",
+   "execution_count": 59,
+   "id": "2cd0d871",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2747,8 +2760,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 31,
-   "id": "a99a0062",
+   "execution_count": 60,
+   "id": "b7aa39b3",
    "metadata": {},
    "outputs": [
     {
@@ -2771,16 +2784,16 @@
   },
   {
    "cell_type": "markdown",
-   "id": "601b3f7d",
+   "id": "5661d771",
    "metadata": {},
    "source": [
-    "#### Transform Categorical Data Scale"
+    "#### Transform Categorical Data - Scale"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
-   "id": "656b0c58",
+   "execution_count": 61,
+   "id": "6f658105",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2796,8 +2809,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 39,
-   "id": "a42eef99",
+   "execution_count": 62,
+   "id": "03724040",
    "metadata": {},
    "outputs": [
     {
@@ -2816,7 +2829,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "d4b02fca",
+   "id": "25ffceec",
    "metadata": {},
    "source": [
     "#### Create a Linear Regression Model"
@@ -2824,8 +2837,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 40,
-   "id": "040fa385",
+   "execution_count": 63,
+   "id": "22523442",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2835,7 +2848,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "965f0d21",
+   "id": "541ecbc9",
    "metadata": {},
    "source": [
     "### 2. Train the model with model.fit()"
@@ -2843,8 +2856,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 42,
-   "id": "0a224533",
+   "execution_count": 64,
+   "id": "f5681b49",
    "metadata": {},
    "outputs": [
     {
@@ -2853,7 +2866,7 @@
        "LinearRegression()"
       ]
      },
-     "execution_count": 42,
+     "execution_count": 64,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2865,7 +2878,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "937b6abd",
+   "id": "5efae533",
    "metadata": {},
    "source": [
     "### 3. Make predictions with model.predict()"
@@ -2873,8 +2886,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 43,
-   "id": "73fc71e2",
+   "execution_count": 69,
+   "id": "f5c23cf7",
    "metadata": {},
    "outputs": [
     {
@@ -2884,7 +2897,7 @@
        "       140988.07291445, 259255.63645414, 110734.51055606])"
       ]
      },
-     "execution_count": 43,
+     "execution_count": 69,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2898,8 +2911,49 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 46,
-   "id": "31cc18c3",
+   "execution_count": null,
+   "id": "e4545adb",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "3050fa2a",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "Found input variables with inconsistent numbers of samples: [365, 1095]",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-70-0fdfdc657045>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      3\u001b[0m \u001b[1;32mfrom\u001b[0m \u001b[0msklearn\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mmetrics\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mmean_squared_error\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m \u001b[1;31m# predicting the accuracy score\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 5\u001b[1;33m \u001b[0mscore\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mr2_score\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_test\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mpredictions\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      6\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'r2 socre is '\u001b[0m\u001b[1;33m,\u001b[0m\u001b[0mscore\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      7\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'mean_sqrd_error is=='\u001b[0m\u001b[1;33m,\u001b[0m\u001b[0mmean_squared_error\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_test\u001b[0m\u001b[1;33m,\u001b[0m\u001b[0mprediction\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\utils\\validation.py\u001b[0m in \u001b[0;36minner_f\u001b[1;34m(*args, **kwargs)\u001b[0m\n\u001b[0;32m     61\u001b[0m             \u001b[0mextra_args\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;33m-\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mall_args\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     62\u001b[0m             \u001b[1;32mif\u001b[0m \u001b[0mextra_args\u001b[0m \u001b[1;33m<=\u001b[0m \u001b[1;36m0\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 63\u001b[1;33m                 \u001b[1;32mreturn\u001b[0m \u001b[0mf\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m*\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     64\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     65\u001b[0m             \u001b[1;31m# extra_args > 0\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\metrics\\_regression.py\u001b[0m in \u001b[0;36mr2_score\u001b[1;34m(y_true, y_pred, sample_weight, multioutput)\u001b[0m\n\u001b[0;32m    675\u001b[0m     \"\"\"\n\u001b[0;32m    676\u001b[0m     y_type, y_true, y_pred, multioutput = _check_reg_targets(\n\u001b[1;32m--> 677\u001b[1;33m         y_true, y_pred, multioutput)\n\u001b[0m\u001b[0;32m    678\u001b[0m     \u001b[0mcheck_consistent_length\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0msample_weight\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    679\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\metrics\\_regression.py\u001b[0m in \u001b[0;36m_check_reg_targets\u001b[1;34m(y_true, y_pred, multioutput, dtype)\u001b[0m\n\u001b[0;32m     86\u001b[0m         \u001b[0mthe\u001b[0m \u001b[0mdtype\u001b[0m \u001b[0margument\u001b[0m \u001b[0mpassed\u001b[0m \u001b[0mto\u001b[0m \u001b[0mcheck_array\u001b[0m\u001b[1;33m.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     87\u001b[0m     \"\"\"\n\u001b[1;32m---> 88\u001b[1;33m     \u001b[0mcheck_consistent_length\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     89\u001b[0m     \u001b[0my_true\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mcheck_array\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mensure_2d\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mFalse\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mdtype\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     90\u001b[0m     \u001b[0my_pred\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mcheck_array\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_pred\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mensure_2d\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mFalse\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mdtype\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\utils\\validation.py\u001b[0m in \u001b[0;36mcheck_consistent_length\u001b[1;34m(*arrays)\u001b[0m\n\u001b[0;32m    261\u001b[0m     \u001b[1;32mif\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0muniques\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;33m>\u001b[0m \u001b[1;36m1\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    262\u001b[0m         raise ValueError(\"Found input variables with inconsistent numbers of\"\n\u001b[1;32m--> 263\u001b[1;33m                          \" samples: %r\" % [int(l) for l in lengths])\n\u001b[0m\u001b[0;32m    264\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    265\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mValueError\u001b[0m: Found input variables with inconsistent numbers of samples: [365, 1095]"
+     ]
+    }
+   ],
+   "source": [
+    "# # importing r2_score module\n",
+    "# from sklearn.metrics import r2_score\n",
+    "# from sklearn.metrics import mean_squared_error\n",
+    "# # predicting the accuracy score\n",
+    "# score=r2_score(y_test, predictions)\n",
+    "# print('r2 socre is ',score)\n",
+    "# print('mean_sqrd_error is==',mean_squared_error(y_test,prediction))\n",
+    "# print('root_mean_squared error of is==',np.sqrt(mean_squared_error(y_test,prediction)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "28466efc",
    "metadata": {},
    "outputs": [
     {
@@ -2909,7 +2963,7 @@
      "traceback": [
       "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
       "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-46-3aaca1dd1917>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m#Plot the predictions as a red line against the data\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mplt\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mscatter\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mX\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m \u001b[0mplt\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mplot\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mX\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mcolor\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;34m'red'\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m \u001b[0mplt\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mshow\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m<ipython-input-67-db5a28afca4f>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m#Plot the predictions as a red line against the data\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mplt\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mscatter\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mX_train_scaled\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_train\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m \u001b[0mplt\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mplot\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mX_train_scaled\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_train\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mcolor\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;34m'red'\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m \u001b[0mplt\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mshow\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\matplotlib\\pyplot.py\u001b[0m in \u001b[0;36mscatter\u001b[1;34m(x, y, s, c, marker, cmap, norm, vmin, vmax, alpha, linewidths, verts, edgecolors, plotnonfinite, data, **kwargs)\u001b[0m\n\u001b[0;32m   2893\u001b[0m         \u001b[0mverts\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mverts\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0medgecolors\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0medgecolors\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   2894\u001b[0m         \u001b[0mplotnonfinite\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mplotnonfinite\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 2895\u001b[1;33m         **({\"data\": data} if data is not None else {}), **kwargs)\n\u001b[0m\u001b[0;32m   2896\u001b[0m     \u001b[0msci\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0m__ret\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   2897\u001b[0m     \u001b[1;32mreturn\u001b[0m \u001b[0m__ret\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\matplotlib\\__init__.py\u001b[0m in \u001b[0;36minner\u001b[1;34m(ax, data, *args, **kwargs)\u001b[0m\n\u001b[0;32m   1445\u001b[0m     \u001b[1;32mdef\u001b[0m \u001b[0minner\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0max\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m*\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mdata\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mNone\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1446\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0mdata\u001b[0m \u001b[1;32mis\u001b[0m \u001b[1;32mNone\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 1447\u001b[1;33m             \u001b[1;32mreturn\u001b[0m \u001b[0mfunc\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0max\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m*\u001b[0m\u001b[0mmap\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0msanitize_sequence\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0margs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   1448\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1449\u001b[0m         \u001b[0mbound\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mnew_sig\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mbind\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0max\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m*\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\matplotlib\\cbook\\deprecation.py\u001b[0m in \u001b[0;36mwrapper\u001b[1;34m(*inner_args, **inner_kwargs)\u001b[0m\n\u001b[0;32m    409\u001b[0m                          \u001b[1;32melse\u001b[0m \u001b[0mdeprecation_addendum\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    410\u001b[0m                 **kwargs)\n\u001b[1;32m--> 411\u001b[1;33m         \u001b[1;32mreturn\u001b[0m \u001b[0mfunc\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m*\u001b[0m\u001b[0minner_args\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0minner_kwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    412\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    413\u001b[0m     \u001b[1;32mreturn\u001b[0m \u001b[0mwrapper\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
@@ -2932,15 +2986,15 @@
    ],
    "source": [
     "#Plot the predictions as a red line against the data\n",
-    "plt.scatter(X, y)\n",
-    "plt.plot(X, y_pred, color='red')\n",
+    "plt.scatter(X_train_scaled, y_train)\n",
+    "plt.plot(X_train_scaled, y_train, color='red')\n",
     "plt.show()"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 47,
-   "id": "71abe5d9",
+   "execution_count": 68,
+   "id": "5c490936",
    "metadata": {},
    "outputs": [
     {
@@ -2963,7 +3017,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "3c27f629",
+   "id": "8048de0d",
    "metadata": {},
    "source": [
     "### 4. Validate the model with Accuracy Score, Confusion Matrix, Classification Report and Rank Importance of Features"
@@ -2971,8 +3025,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 48,
-   "id": "930f5cb9",
+   "execution_count": 34,
+   "id": "ffd7f9b8",
    "metadata": {},
    "outputs": [
     {
@@ -2982,7 +3036,7 @@
      "traceback": [
       "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
       "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-48-8c309f42a1b7>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m# Calculating the confusion matrix.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mcm\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mconfusion_matrix\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_test\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mpredictions\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m \u001b[1;31m# Create a DataFrame from the confusion matrix.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m cm_df = pd.DataFrame(\n",
+      "\u001b[1;32m<ipython-input-34-8c309f42a1b7>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m# Calculating the confusion matrix.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mcm\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mconfusion_matrix\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_test\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mpredictions\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m \u001b[1;31m# Create a DataFrame from the confusion matrix.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m cm_df = pd.DataFrame(\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\utils\\validation.py\u001b[0m in \u001b[0;36minner_f\u001b[1;34m(*args, **kwargs)\u001b[0m\n\u001b[0;32m     61\u001b[0m             \u001b[0mextra_args\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;33m-\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mall_args\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     62\u001b[0m             \u001b[1;32mif\u001b[0m \u001b[0mextra_args\u001b[0m \u001b[1;33m<=\u001b[0m \u001b[1;36m0\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 63\u001b[1;33m                 \u001b[1;32mreturn\u001b[0m \u001b[0mf\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m*\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     64\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     65\u001b[0m             \u001b[1;31m# extra_args > 0\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\metrics\\_classification.py\u001b[0m in \u001b[0;36mconfusion_matrix\u001b[1;34m(y_true, y_pred, labels, sample_weight, normalize)\u001b[0m\n\u001b[0;32m    294\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    295\u001b[0m     \"\"\"\n\u001b[1;32m--> 296\u001b[1;33m     \u001b[0my_type\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0m_check_targets\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    297\u001b[0m     \u001b[1;32mif\u001b[0m \u001b[0my_type\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[1;32min\u001b[0m \u001b[1;33m(\u001b[0m\u001b[1;34m\"binary\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"multiclass\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    298\u001b[0m         \u001b[1;32mraise\u001b[0m \u001b[0mValueError\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"%s is not supported\"\u001b[0m \u001b[1;33m%\u001b[0m \u001b[0my_type\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\metrics\\_classification.py\u001b[0m in \u001b[0;36m_check_targets\u001b[1;34m(y_true, y_pred)\u001b[0m\n\u001b[0;32m     81\u001b[0m     \u001b[0my_pred\u001b[0m \u001b[1;33m:\u001b[0m \u001b[0marray\u001b[0m \u001b[1;32mor\u001b[0m \u001b[0mindicator\u001b[0m \u001b[0mmatrix\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     82\u001b[0m     \"\"\"\n\u001b[1;32m---> 83\u001b[1;33m     \u001b[0mcheck_consistent_length\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     84\u001b[0m     \u001b[0mtype_true\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mtype_of_target\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     85\u001b[0m     \u001b[0mtype_pred\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mtype_of_target\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_pred\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
@@ -3004,23 +3058,23 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 49,
-   "id": "18d79d2f",
+   "execution_count": 211,
+   "id": "b78d9bac",
    "metadata": {},
    "outputs": [
     {
      "ename": "ValueError",
-     "evalue": "Found input variables with inconsistent numbers of samples: [365, 1095]",
+     "evalue": "Found input variables with inconsistent numbers of samples: [365, 1168]",
      "output_type": "error",
      "traceback": [
       "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
       "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-49-15e28af69a0d>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m# Calculating the accuracy score.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0macc_score\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0maccuracy_score\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_test\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mpredictions\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m \u001b[0macc_score\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m<ipython-input-211-15e28af69a0d>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m# Calculating the accuracy score.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0macc_score\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0maccuracy_score\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_test\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mpredictions\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m \u001b[0macc_score\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\utils\\validation.py\u001b[0m in \u001b[0;36minner_f\u001b[1;34m(*args, **kwargs)\u001b[0m\n\u001b[0;32m     61\u001b[0m             \u001b[0mextra_args\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;33m-\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mall_args\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     62\u001b[0m             \u001b[1;32mif\u001b[0m \u001b[0mextra_args\u001b[0m \u001b[1;33m<=\u001b[0m \u001b[1;36m0\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 63\u001b[1;33m                 \u001b[1;32mreturn\u001b[0m \u001b[0mf\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m*\u001b[0m\u001b[0margs\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     64\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     65\u001b[0m             \u001b[1;31m# extra_args > 0\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\metrics\\_classification.py\u001b[0m in \u001b[0;36maccuracy_score\u001b[1;34m(y_true, y_pred, normalize, sample_weight)\u001b[0m\n\u001b[0;32m    200\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    201\u001b[0m     \u001b[1;31m# Compute accuracy for each possible representation\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 202\u001b[1;33m     \u001b[0my_type\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0m_check_targets\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    203\u001b[0m     \u001b[0mcheck_consistent_length\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0msample_weight\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    204\u001b[0m     \u001b[1;32mif\u001b[0m \u001b[0my_type\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mstartswith\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'multilabel'\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\metrics\\_classification.py\u001b[0m in \u001b[0;36m_check_targets\u001b[1;34m(y_true, y_pred)\u001b[0m\n\u001b[0;32m     81\u001b[0m     \u001b[0my_pred\u001b[0m \u001b[1;33m:\u001b[0m \u001b[0marray\u001b[0m \u001b[1;32mor\u001b[0m \u001b[0mindicator\u001b[0m \u001b[0mmatrix\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     82\u001b[0m     \"\"\"\n\u001b[1;32m---> 83\u001b[1;33m     \u001b[0mcheck_consistent_length\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0my_pred\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     84\u001b[0m     \u001b[0mtype_true\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mtype_of_target\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_true\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     85\u001b[0m     \u001b[0mtype_pred\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mtype_of_target\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0my_pred\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
       "\u001b[1;32m~\\anaconda3\\envs\\mlenv\\lib\\site-packages\\sklearn\\utils\\validation.py\u001b[0m in \u001b[0;36mcheck_consistent_length\u001b[1;34m(*arrays)\u001b[0m\n\u001b[0;32m    261\u001b[0m     \u001b[1;32mif\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0muniques\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;33m>\u001b[0m \u001b[1;36m1\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    262\u001b[0m         raise ValueError(\"Found input variables with inconsistent numbers of\"\n\u001b[1;32m--> 263\u001b[1;33m                          \" samples: %r\" % [int(l) for l in lengths])\n\u001b[0m\u001b[0;32m    264\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    265\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
-      "\u001b[1;31mValueError\u001b[0m: Found input variables with inconsistent numbers of samples: [365, 1095]"
+      "\u001b[1;31mValueError\u001b[0m: Found input variables with inconsistent numbers of samples: [365, 1168]"
      ]
     }
    ],
@@ -3033,7 +3087,7 @@
   {
    "cell_type": "code",
    "execution_count": 50,
-   "id": "2ad8230b",
+   "id": "1c1925e4",
    "metadata": {},
    "outputs": [
     {
@@ -3065,11 +3119,9 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 51,
-   "id": "7d02d7f0",
+   "cell_type": "markdown",
+   "id": "fefd066a",
    "metadata": {},
-   "outputs": [],
    "source": [
     "# Rank The Importance of Features"
    ]
@@ -3077,7 +3129,7 @@
   {
    "cell_type": "code",
    "execution_count": 52,
-   "id": "f3cf78b7",
+   "id": "96aa4e3b",
    "metadata": {},
    "outputs": [
     {
@@ -3093,15 +3145,15 @@
     }
    ],
    "source": [
-    "# Calculate feature importance in the Random Forest model.\n",
+    "# Calculate feature importance\n",
     "importances = model.feature_importances_\n",
     "importances"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 53,
-   "id": "35017002",
+   "execution_count": 242,
+   "id": "93b0595e",
    "metadata": {},
    "outputs": [
     {
@@ -3111,15 +3163,23 @@
      "traceback": [
       "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
       "\u001b[1;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-53-bc54df98a3d3>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m# We can sort the features by their importance.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0msorted\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mzip\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mmodel\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mfeature_importances_\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mX\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcolumns\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mreverse\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mTrue\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;32m<ipython-input-242-51d0da9658bc>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m# Sort the features by their importance.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0msorted\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mzip\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mmodel\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mfeature_importances_\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mX\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcolumns\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mreverse\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mTrue\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
       "\u001b[1;31mAttributeError\u001b[0m: 'LinearRegression' object has no attribute 'feature_importances_'"
      ]
     }
    ],
    "source": [
-    "# We can sort the features by their importance.\n",
+    "# Sort the features by their importance.\n",
     "sorted(zip(model.feature_importances_, X.columns), reverse=True)"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0c4e582c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
