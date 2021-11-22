@@ -1,4 +1,4 @@
-,Data Type,Missing Values,Unique Values
+Column,Data Type,Missing Values,Unique Values
 Id,int64,0,1460
 MSSubClass,int64,0,15
 MSZoning,object,0,5
