@@ -1,4 +1,4 @@
-![Cover](https://user-images.githubusercontent.com/85421407/142927441-44f15e37-ff2a-4970-8e48-ff0474eff926.png)
+![cover](https://user-images.githubusercontent.com/85421407/142942183-964584eb-71af-4eff-822c-f5cae98343b9.jpg)
 [Project Dashboard](https://public.tableau.com/views/PredicttheFinalHomePrice/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ## Summary
