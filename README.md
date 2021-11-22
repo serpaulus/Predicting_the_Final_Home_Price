@@ -1,6 +1,5 @@
 ![Final_project_presentation](https://user-images.githubusercontent.com/85421407/141881008-6c9abc09-3ae2-4a0a-865d-a6ee5f2290ec.jpg)
-
-
+[Project Dashboard](https://public.tableau.com/views/PredicttheFinalHomePrice/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ## Summary
 
