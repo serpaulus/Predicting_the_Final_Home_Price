@@ -71,10 +71,11 @@ We created an [AWS DB instance](https://user-images.githubusercontent.com/854214
 
 
 ## Results
+The following graph shows aids in comparing actual with predated sale prices.
 
+![a](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/MLR_results.GIF)
 
-
-Explore the [Interactive Dashboard](https://public.tableau.com/app/profile/ask1455/viz/PredicttheFinalHomePrice/Dashboard2_1#1)
+### Explore the [Interactive Dashboard](https://public.tableau.com/app/profile/ask1455/viz/PredicttheFinalHomePrice/Dashboard2_1#1)
 
 ## Conclusion
 
