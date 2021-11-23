@@ -45,11 +45,13 @@ StandardScaler was used to scale the data and Seaborn was used to create a heatm
 
 ![feature_corr_matrix](https://user-images.githubusercontent.com/85421407/142972745-45b22e35-672b-48a2-8ea8-5363f85b1238.png)
 
-Based on the Heatmap, we can conclude that there is a correlation between the House Style and Sale Price. However, not all the figures are clear in the Heatmap. For better visualization, we created a correlation Scatter plot. Based on the results of the Scatter Plot, we can conclude that Total Square footage, Number of Baths and Overall Quality features also have strong correlation to the Sale Price, with Overall Quality having the strongest correlation. 
+Based on the Heatmap, we can conclude that there is a correlation between the House Style and Sale Price. However, not all the figures are clear in the Heatmap. For better visualization, we created a correlation Scatter plot. Based on the results of the Scatter Plot, we can conclude that Total Square footage, Number of Baths and Overall Quality features also have strong correlation to the Sale Price, with Overall Quality having the strongest correlation.
+
+![scatterplot_matrix](https://user-images.githubusercontent.com/85421407/142975667-e94d2f65-dcd0-4278-8a1c-feaae83d1ed6.png)
 
 ## Database
 
-We created an [AWS DB instance](https://user-images.githubusercontent.com/85421407/142973441-79e27fed-3e89-4d6e-a320-d15a67af2310.GIF) called “housing-prices” and using pandas and SQLAlchemy, we connected AWS with SQL to store the working data for this analysis. Once connected, we imported and exported from the database throughout the project. Multiple tables were created during the duration of this project but for the final segment, we merged our updated clean_train table, which was renamed “df” with the price_compare table to properly display the features with the Actual and Predicted Sale Price.
+We created an [AWS DB instance](https://user-images.githubusercontent.com/85421407/142973441-79e27fed-3e89-4d6e-a320-d15a67af2310.GIF) called “housing-prices” and [using pandas and SQLAlchemy], we connected AWS with SQL to store the working data for this analysis. Once connected, we imported and exported from the database throughout the project. Multiple tables were created during the duration of this project but for the final segment, we merged our updated clean_train table, which was renamed “df” with the price_compare table to properly display the features with the Actual and Predicted Sale Price.
 
 
 
