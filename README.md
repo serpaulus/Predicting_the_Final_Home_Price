@@ -46,7 +46,7 @@ The main library used to import and clean the datasets was Python Pandas. Once c
 
 When selecting home features for this analysis, we asked ourselves, what features do home buyers look for in their dream home? What features do we look for when buying a home and having our home appraised? What features do we believe will have the most correlation to the Sale Price? The answers to these questions were instrumental in the features we decided to explore. We selected House Style, No_of Bedrooms, Garage_Type, Total_Sqft, Lot Location, Year Built, Year Remodeled, 1st and 2nd Exterior, Masonry Veneer Type, Neighborhood, Overall Quality, Overall Condition, Sale Condition, and Sale price. 
 
-The house dataset has several categorical values that need to be converted to numerical values to accurately analyze the data without errors. Using Label Encoder, we transformed the categorical values in the Dataframe to integers.
+The house dataset has several categorical values that need to be converted to numerical values to accurately analyze the data without errors. Using Label Encoder, we transformed the categorical values in the Dataframe to integers. See the [Machine Learning Analisys file]() for a complete description of the data clean-up and preparation process.
 
 StandardScaler was used to scale the data and Seaborn was used to create a heatmap and check the correlation between the features and the Sale Price
 
@@ -72,11 +72,3 @@ Explore the [Interactive Dashboard](https://public.tableau.com/app/profile/ask14
 
 Multiple linear regression is a tried an effective way to attain relatively reliable data predictions fairly easily. For now, with a margin of error in the tens of thousands this model is still far from useful. Nonetheless, with sampling corrections and better statistical feature analysis, this model has potential for more accurate and precise results. Still, other models such as Random Forest and Neural Networks might provide higher versatility.
 
-
-
-
-## Overview
-
-It is hard to think of any industry in which Data Analytics does not play a major role.  The housing market is not the exception. From analyzing national or regional market trends to be able to assess the value of home before it enters the market data analytics helps provide key insights that drive some of the most important market decisions and strategies. This team project aims to apply machine learning methodologies to analyze various common features to predict the final selling price.     
-
- 
