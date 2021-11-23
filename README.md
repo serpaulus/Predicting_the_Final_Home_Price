@@ -56,6 +56,14 @@ Based on the Heatmap, we can conclude that there is a correlation between the Ho
 
 ![scatterplot_matrix](https://user-images.githubusercontent.com/85421407/142975667-e94d2f65-dcd0-4278-8a1c-feaae83d1ed6.png)
 
+With these insights, we processed to set analysis with two models: 
+1) Multiple Linear Regression with all selected features
+2) Multiple Linear Regression with all only features with a correlation > 0.5
+3) Random Forest
+
+The complete process is available for review in the [Machine_Learning_Model_MLR_&_RF](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Machine_Learning_Model_MLR_%26_RF.ipynb) file
+
+
 ## Database
 
 We created an [AWS DB instance](https://user-images.githubusercontent.com/85421407/142973441-79e27fed-3e89-4d6e-a320-d15a67af2310.GIF) called “housing-prices” and [using pandas and SQLAlchemy](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/SQLDBpandas.GIF),([AWS RDS](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/AWS%20RDS%20DB.png)) we connected AWS with SQL to store the working data for this analysis. Once connected, we imported and exported from the database throughout the project. Multiple tables were created during the duration of this project but for the final segment, we merged our updated clean_train table, which was renamed “df” with the price_compare table to properly display the features with the Actual and Predicted Sale Price. See [ERD](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/ERD%20.png)
