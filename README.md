@@ -22,7 +22,6 @@ What could we have done differently, to get better results?
 
 What do we recommend for future analysis?
 
-[Project Presentation Slides](https://docs.google.com/presentation/d/1CP-Y-DHtzvPq8qeBXkekO-sVphJCxbwzYxdpZ75kIPY/edit#slide=id.p1)
 
 ## Data Exploration
 
@@ -67,11 +66,13 @@ We created an [AWS DB instance](https://user-images.githubusercontent.com/854214
 
 In our multiple linear regression analysis implementation, we attained the following results: 
 
-r2: 0.7670161446018462
-Coefs: [-5503.36095349 -7596.27583908 -6762.28060402 -1850.0864659
+r2: 0.767
+
+Coefs: -5503.36095349 -7596.27583908 -6762.28060402 -1850.0864659
  44544.50977692 -1327.66270832 20832.54638433  1245.95433517
  -1633.18043178   848.12784225  2225.52109349  3685.52426009
  28548.80558026  6555.11431169  4062.03930574]
+
 error: 38332.491698241436
 
 Model adjustments are still required to improve accuracy.  
@@ -84,9 +85,11 @@ Random forest provided predictions, but the accuracy data showed inconsistencies
 
 [Machine_Learning_Model_MLR & RF](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Machine_Learning_Model_MLR_%26_RF.ipynb) contains the code used in this portion of the analysis.   
 
-## Explore how house features affect the sale price [HERE](https://public.tableau.com/app/profile/ask1455/viz/PredicttheFinalHomePrice/Dashboard2_1?publish=yes) 
+## Explore how house features affect the sale price [HERE](https://public.tableau.com/app/profile/ask1455/viz/PredicttheFinalHomePrice/Dashboard2_1?publish=yes)
+
+[Project Presentation Slides](https://docs.google.com/presentation/d/1RFfQw3XB_AzRRkplmPbaM7PTO63AIKSM8Le8sRpE6ZY/edit?usp=sharing)
 
 ## Conclusion
 
-Multiple linear regression is a tried an effective way to attain relatively reliable data predictions. Model adjustments are still required to improve accuracy. Nonetheless,+ with sampling corrections and better statistical feature analysis this model has potential for more accurate and precise results. Further, exploration of other models such as Random Forest and Neural Networks might also render higher versatility, and accuracy on this dataset.
+Multiple linear regression is a tried an effective way to attain relatively reliable data predictions. Model adjustments are still required to improve accuracy. Nonetheless, with sampling corrections and better statistical feature analysis this model has potential for more accurate and precise results. Further, exploration of other models such as Random Forest and Neural Networks might also render higher versatility, and accuracy on this dataset.
 
