@@ -88,5 +88,5 @@ Random forest provided predictions, but the accuracy data showed inconsistencies
 
 ## Conclusion
 
-Multiple linear regression is a tried an effective way to attain relatively reliable data predictions fairly easily. Model adjustments are still required to improve accuracy. Nonetheless,+ with sampling corrections and better statistical feature analysis this model has potential for more accurate and precise results. Further, exploration of other models such as Random Forest and Neural Networks might also render higher versatility, and accuracy on this dataset.
+Multiple linear regression is a tried an effective way to attain relatively reliable data predictions. Model adjustments are still required to improve accuracy. Nonetheless,+ with sampling corrections and better statistical feature analysis this model has potential for more accurate and precise results. Further, exploration of other models such as Random Forest and Neural Networks might also render higher versatility, and accuracy on this dataset.
 
