@@ -29,9 +29,16 @@ What do we recommend for future analysis?
 
 The dataset used for this project is the Ames, Iowa housing dataset found on Kaggle. The dataset is divided into two: training and test datasets. The training dataset has 1461 rows and 81 columns while the test dataset has 1459 rows and 80 columns. Initially, we selected 20 columns from the 81 features but the more we explored and cleaned the data, we dropped more features as they appear to have little impact on the Sale Price. 
 
-Test data set
+   - [Test data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/test.csv)
 
-Train data set
+   - [Train data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train.csv)
+   
+   - [Qualitative summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/kaggle_data_description.txt)
+
+   - [Test metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
+
+   - [Train metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train_desc.csv)
+   
 
 The main library used to import and clean the datasets was Python Pandas. Once completed, we exported the 20 cleaned dataset into the SQL database. We created features and an overall quality table, which we exported to SQL and merged to form a features/Quality table. The more we explored, the more we updated our dataset and dropped columns, which we will discuss in further detail.
 
@@ -78,18 +85,10 @@ It is hard to think of any industry in which Data Analytics does not play a majo
 
 Project data was obtained from a active Kaggle challenge to predict the final price of homes in the city of Ames, Iowa, and consists of:
 
-   - [Test data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/test.csv)
-
-   - [Train data set](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train.csv)
 
 Description
 
-   - [Qualitative summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/kaggle_data_description.txt)
 
-   - [Test metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/tst_desc.csv)
-
-   - [Train metadata summary](https://github.com/serpaulus/Final_Project/blob/main/Data_Sets/train_desc.csv)
-   
       
 
 
