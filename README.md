@@ -1,4 +1,3 @@
-
 ![Cover](https://user-images.githubusercontent.com/85421407/142972893-15a9e96c-7e7c-46eb-bff5-8f324ee45638.png)
 
 ## Overview
@@ -13,7 +12,7 @@ Questions:
 
 What is the predicted Sale Price for each home?
 
-Are there any correlation between the Sale Price and the features?
+Is there any correlation between the Sale Price and the features?
 
 What feature(s) has the most significant effect on the predicted final Sale Price?
 
@@ -46,7 +45,7 @@ The main library used to import and clean the datasets was Python Pandas. Once c
 
 When selecting home features for this analysis, we asked ourselves, what features do home buyers look for in their dream home? What features do we look for when buying a home and having our home appraised? What features do we believe will have the most correlation to the Sale Price? The answers to these questions were instrumental in the features we decided to explore. We selected House Style, No_of Bedrooms, Garage_Type, Total_Sqft, Lot Location, Year Built, Year Remodeled, 1st and 2nd Exterior, Masonry Veneer Type, Neighborhood, Overall Quality, Overall Condition, Sale Condition, and Sale price. 
 
-The house dataset has several categorical values that need to be converted to numerical values to accurately analyze the data without errors. Using Label Encoder, we transformed the categorical values in the Dataframe to integers. See the [Machine Learning Analisys file]() for a complete description of the data clean-up and preparation process.
+The house dataset has several categorical values that need to be converted to numerical values to accurately analyze the data without errors. Using Label Encoder, we transformed the categorical values in the Dataframe to integers. See the [Machine Learning Analysis file]() for a complete description of the data clean-up and preparation process.
 
 StandardScaler was used to scale the data and Seaborn was used to create a heatmap and check the correlation between the features and the Sale Price
 
@@ -71,13 +70,29 @@ We created an [AWS DB instance](https://user-images.githubusercontent.com/854214
 
 
 ## Results
+
+In our multiple linear regression analysis implementation, we attained the following results: 
+
+r2: 0.7670161446018462
+Coefs: [-5503.36095349 -7596.27583908 -6762.28060402 -1850.0864659
+ 44544.50977692 -1327.66270832 20832.54638433  1245.95433517
+ -1633.18043178   848.12784225  2225.52109349  3685.52426009
+ 28548.80558026  6555.11431169  4062.03930574]
+error: 38332.491698241436
+
+Model adjustments are still required to improve accuracy.  
+
 The following graph shows aids in comparing actual with predated sale prices.
 
 ![a](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/MLR_results.GIF)
 
-### Explore the [Interactive Dashboard](https://public.tableau.com/app/profile/ask1455/viz/PredicttheFinalHomePrice/Dashboard2_1#1)
+Random forest provided predictions, but the accuracy data showed inconsistencies with the implementation. Further development is required. 
+
+[Machine_Learning_Model_MLR & RF](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Machine_Learning_Model_MLR_%26_RF.ipynb) contains the code used in this portion of the analysis.   
+
+## Explore how house features affect the sale price [HERE](https://public.tableau.com/app/profile/ask1455/viz/PredicttheFinalHomePrice/Dashboard2_1?publish=yes) 
 
 ## Conclusion
 
-Model adjustments are still required to improve accuracy.  Multiple linear regression is a tried an effective way to attain relatively reliable data predictions fairly easily. For now, with a margin of error in the tens of thousands this model is still far from useful. Nonetheless, with sampling corrections and better statistical feature analysis, this model has potential for more accurate and precise results. Still, other models such as Random Forest and Neural Networks might provide higher versatility.
+Multiple linear regression is a tried an effective way to attain relatively reliable data predictions fairly easily. Model adjustments are still required to improve accuracy. Nonetheless,+ with sampling corrections and better statistical feature analysis this model has potential for more accurate and precise results. Further, exploration of other models such as Random Forest and Neural Networks might also render higher versatility, and accuracy on this dataset.
 
