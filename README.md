@@ -35,9 +35,9 @@ Train data set
 
 The main library used to import and clean the datasets was Python Pandas. Once completed, we exported the 20 cleaned dataset into the SQL database. We created features and an overall quality table, which we exported to SQL and merged to form a features/Quality table. The more we explored, the more we updated our dataset and dropped columns, which we will discuss in further detail.
 
-## Machine Learning
-
 When selecting home features for this analysis, we asked ourselves, what features do home buyers look for in their dream home? What features do we look for when buying a home and having our home appraised? What features do we believe will have the most correlation to the Sale Price? The answers to these questions were instrumental in the features we decided to explore. We selected House Style, No_of Bedrooms, Garage_Type, Total_Sqft, Lot Location, Year Built, Year Remodeled, 1st and 2nd Exterior, Masonry Veneer Type, Neighborhood, Overall Quality, Overall Condition, Sale Condition, and Sale price. 
+
+## Machine Learning
 
 The house dataset has several categorical values that need to be converted to numerical values to accurately analyze the data without errors. Using Label Encoder, we transformed the categorical values in the Dataframe to integers.
 
@@ -51,12 +51,13 @@ Based on the Heatmap, we can conclude that there is a correlation between the Ho
 
 ## Database
 
-We created an [AWS DB instance](https://user-images.githubusercontent.com/85421407/142973441-79e27fed-3e89-4d6e-a320-d15a67af2310.GIF) called “housing-prices” and [using pandas and SQLAlchemy](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/SQLDBpandas.GIF),([AWS RDS](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/AWS%20RDS%20DB.png) we connected AWS with SQL to store the working data for this analysis. Once connected, we imported and exported from the database throughout the project. Multiple tables were created during the duration of this project but for the final segment, we merged our updated clean_train table, which was renamed “df” with the price_compare table to properly display the features with the Actual and Predicted Sale Price.
-
+We created an [AWS DB instance](https://user-images.githubusercontent.com/85421407/142973441-79e27fed-3e89-4d6e-a320-d15a67af2310.GIF) called “housing-prices” and [using pandas and SQLAlchemy](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/SQLDBpandas.GIF),([AWS RDS](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/AWS%20RDS%20DB.png)) we connected AWS with SQL to store the working data for this analysis. Once connected, we imported and exported from the database throughout the project. Multiple tables were created during the duration of this project but for the final segment, we merged our updated clean_train table, which was renamed “df” with the price_compare table to properly display the features with the Actual and Predicted Sale Price. See [ERD](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Resources/ERD%20.png)
+ schema.  
 
 
 ## Results and Dashboad
 
+[Project Dashboard](https://public.tableau.com/views/PredicttheFinalHomePrice/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ## Conclusion
 
@@ -69,7 +70,7 @@ We created an [AWS DB instance](https://user-images.githubusercontent.com/854214
 
 It is hard to think of any industry in which Data Analytics does not play a major role.  The housing market is not the exception. From analyzing national or regional market trends to be able to assess the value of home before it enters the market data analytics helps provide key insights that drive some of the most important market decisions and strategies. This team project aims to apply machine learning methodologies to analyze various common features to predict the final selling price.     
 
-[Project Dashboard](https://public.tableau.com/views/PredicttheFinalHomePrice/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
 
 ## Methodology
 
