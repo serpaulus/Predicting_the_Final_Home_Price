@@ -79,5 +79,5 @@ The following graph shows aids in comparing actual with predated sale prices.
 
 ## Conclusion
 
-Multiple linear regression is a tried an effective way to attain relatively reliable data predictions fairly easily. For now, with a margin of error in the tens of thousands this model is still far from useful. Nonetheless, with sampling corrections and better statistical feature analysis, this model has potential for more accurate and precise results. Still, other models such as Random Forest and Neural Networks might provide higher versatility.
+Model adjustments are still required to improve accuracy.  Multiple linear regression is a tried an effective way to attain relatively reliable data predictions fairly easily. For now, with a margin of error in the tens of thousands this model is still far from useful. Nonetheless, with sampling corrections and better statistical feature analysis, this model has potential for more accurate and precise results. Still, other models such as Random Forest and Neural Networks might provide higher versatility.
 
