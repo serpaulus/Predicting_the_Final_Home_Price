@@ -55,13 +55,7 @@ Based on the Heatmap, we can conclude that there is a correlation between the Ho
 
 ![scatterplot_matrix](https://user-images.githubusercontent.com/85421407/142975667-e94d2f65-dcd0-4278-8a1c-feaae83d1ed6.png)
 
-With these insights, we processed to set analysis with two models: 
-1) Multiple Linear Regression with all selected features
-2) Multiple Linear Regression with all only features with a correlation > 0.5
-3) Random Forest
-
-The complete process is available for review in the [Machine_Learning_Model_MLR_&_RF](https://github.com/serpaulus/Predicting_the_Final_Home_Price/blob/main/Machine_Learning_Model_MLR_%26_RF.ipynb) file
-
+With these insights, we processed to set analysis with two methods Multiple Linear Regression and Random Forest. 
 
 ## Database
 
