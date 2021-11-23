@@ -85,6 +85,15 @@ Team members present a provisional database that stands in for the final databas
 ![a](https://github.com/serpaulus/Final_Project/blob/main/Resources/ML_deliv2a.PNG) 
 ![b](https://github.com/serpaulus/Final_Project/blob/main/Resources/train_lrm_results_in_db.PNG)     
 
+### Database
+
+We created an AWS DB instance called “housing-prices” and using pandas and SQLAlchemy, we connected AWS with SQL to store the working data for this analysis. Once connected, we imported and exported from the database throughout the project. Multiple tables were created during the duration of this project but for the final segment, we merged our updated clean_train table, which was renamed “df” with the price_compare table to properly display the features with the Actual and Predicted Sale Price.
+
+![a]("https://user-images.githubusercontent.com/85265504/142972335-32539432-4dbe-478f-9c57-ea6e2763ee8f.png")
+
+![Database Connection]("https://user-images.githubusercontent.com/85265504/142972433-689f8e36-adc3-4342-856c-3e79d31a6a9c.png")
+
+
 ### Technologies
 
 Jupyter Notebook
