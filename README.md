@@ -62,13 +62,15 @@ We created an [AWS DB instance](https://user-images.githubusercontent.com/854214
  schema.  
 
 
-## Results and Dashboad
+## Results
 
-[Project Dashboard](https://public.tableau.com/views/PredicttheFinalHomePrice/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
+
+Explore the [Interactive Dashboard](https://public.tableau.com/app/profile/ask1455/viz/PredicttheFinalHomePrice/Dashboard2_1#1)
 
 ## Conclusion
 
-
+Multiple linear regression is a tried an effective way to attain relatively reliable data predictions fairly easily. For now, with a margin of error in the tens of thousands this model is still far from useful. Nonetheless, with sampling corrections and better statistical feature analysis, this model has potential for more accurate and precise results. Still, other models such as Random Forest and Neural Networks might provide higher versatility.
 
 
 
@@ -77,105 +79,4 @@ We created an [AWS DB instance](https://user-images.githubusercontent.com/854214
 
 It is hard to think of any industry in which Data Analytics does not play a major role.  The housing market is not the exception. From analyzing national or regional market trends to be able to assess the value of home before it enters the market data analytics helps provide key insights that drive some of the most important market decisions and strategies. This team project aims to apply machine learning methodologies to analyze various common features to predict the final selling price.     
 
-
-
-## Methodology
-
-### Data Source
-
-Project data was obtained from a active Kaggle challenge to predict the final price of homes in the city of Ames, Iowa, and consists of:
-
-
-Description
-
-
-      
-
-
-   
-
  
- ### Proposed questions to answer 
-    
-   1)	What is the predicted final price of each home on the test sample?
-
-   2)	What can the prediction results be compared against?
-
-   3)	What is the level of accuracy?
-
-   4)	What factors affect the model accuracy?
-
-   5)	What Home features affect the home prices the most in the prediction model?
-
-
-  ### Communication protocols
-  
- The team will communicate via mainly via Slack and Zoom when required. 
-
- As much as possible branch merges will be coordinated with team members
-
- Updates via Slack and request collaboration in a timely manner to minimise delays 
-
- Leads will be the primary developers in their deliverables, and will submit their deliverable branch; howerver, all team members will try to 
- assist whenever it requested
-        
-    
- ### GitHub Deliverables 
-     
- [X] Main Branch includes a README.md
-
- [X] At least one branch for each team member
-
- [X] Each team member has at least four commits from the duration of the first segment
-
-
- ### Machine Learning Model Deliverables
- 
-
-Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
- 
-[x] Takes in data in from the provisional database
-![a](https://github.com/serpaulus/Final_Project/blob/main/Resources/ML_deliv1.PNG)
-  
- 
-### Database Deliverables
-
-
-Team members present a provisional database that stands in for the final database and accomplishes the following: 
- 
-[x] Sample data that mimics the expected final database structure or schema
-![s](https://github.com/serpaulus/Final_Project/blob/main/Resources/tables_in_pgsql.PNG)
-
-[x] Draft machine learning module is connected to the provisional database
-![a](https://github.com/serpaulus/Final_Project/blob/main/Resources/ML_deliv2a.PNG) 
-![b](https://github.com/serpaulus/Final_Project/blob/main/Resources/train_lrm_results_in_db.PNG)     
-
-### Technologies
-
-Jupyter Notebook
-
-Python
-
-PostgreSQL
-
-
-
-
-    
-    
- 
-
-
-
-    
-    
-
-  
-    
-    
-
-    
-    
-
-    
-
